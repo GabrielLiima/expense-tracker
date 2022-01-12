@@ -1,0 +1,18 @@
+.income {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.8rem;
+  border-right: 6px solid rgb(90, 219, 90);
+  margin-bottom: 0.8rem;
+}
+
+.expense {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.8rem;
+  border-right: 6px solid rgb(255, 91, 91);
+  margin-bottom: 0.8rem;
+}
+
