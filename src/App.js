@@ -1,9 +1,9 @@
 import classes from "./App.module.css";
-import Header from "./components/expenses/Header";
+import Header from "./components/Header";
 import Section from "./components/UI/Section";
 import Card from "./components/UI/Card";
 import Expense from "./components/expenses/Expense";
-import ItemList from "./components/expenses/ItemList";
+import ItemList from "./components/items/ItemList";
 
 function App() {
   const items = [
