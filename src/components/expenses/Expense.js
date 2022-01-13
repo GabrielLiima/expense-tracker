@@ -8,6 +8,7 @@ const Expense = () => {
         <h2>INCOME</h2>
         <p>$500.00</p>
       </div>
+      <div className={classes.separator}></div>
       <div className={classes.expense}>
         <h2>EXPENSE</h2>
         <p>$240.00</p>

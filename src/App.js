@@ -30,6 +30,7 @@ function App() {
       <Expense />
       <Section>History</Section>
       <ItemList items={items} />
+      <Section>Add new transaction</Section>
     </Card>
   );
 }

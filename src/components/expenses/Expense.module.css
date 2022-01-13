@@ -1,40 +1,40 @@
 .wrapper {
   display: flex;
-  justify-content: space-around;
   box-sizing: border-box;
   border-radius: 0.8rem;
   width: 100%;
   margin: 1.5rem auto 0 auto;
 }
 
-.income {
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem 0;
+.separator {
+  border-left: 2px solid rgba(172, 172, 172, 0.25);
+  margin: 1rem 0 1rem 0;
 }
 
-.income h2 {
-  align-self: center;
-  padding-bottom: 0.1rem;
-}
-
-.income p {
-  font-size: 1.5rem;
-  color: rgb(126, 226, 126);
-}
-
+.income,
 .expense {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem 0;
+  flex: 1;
+  padding: 1rem 0;
 }
 
+.income h2,
 .expense h2 {
   align-self: center;
   padding-bottom: 0.1rem;
 }
 
+.income p,
 .expense p {
+  align-self: center;
   font-size: 1.5rem;
+}
+
+.income p {
+  color: rgb(90, 219, 90);
+}
+
+.expense p {
   color: rgb(255, 91, 91);
 }
