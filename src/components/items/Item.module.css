@@ -1,18 +1,46 @@
-.income {
-  padding: 1rem;
+.income,
+.expense {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem;
   border-radius: 0.8rem;
-  border-right: 6px solid rgb(90, 219, 90);
   margin-bottom: 0.8rem;
 }
 
 .expense {
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 0.8rem;
   border-right: 6px solid rgb(255, 91, 91);
-  margin-bottom: 0.8rem;
 }
 
+.income {
+  border-right: 6px solid rgb(90, 219, 90);
+}
+
+.title {
+  flex: 1;
+}
+
+.delete {
+  display: none;
+  color: white;
+  background-color: rgb(255, 91, 91);
+  font: inherit;
+  padding: 0;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.expense:hover .delete {
+  display: inline;
+}
+
+.income:hover .delete {
+  display: block;
+}
+
+.delete:hover {
+  background-color: rgb(255, 62, 62);
+}

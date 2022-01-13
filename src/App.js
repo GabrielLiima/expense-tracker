@@ -12,18 +12,28 @@ function App() {
 
   const onAddItemHandler = (enteredItems) => {
     setItems((prevItems) => {
-      console.log([enteredItems, ...prevItems]);
       return [enteredItems, ...prevItems];
+    });
+  };
+
+  const deleteItemHandler = (id) => {
+    setItems((prevItems) => {
+      const updatedItems = prevItems.filter((item) => item.id !== id);
+      return updatedItems;
     });
   };
 
   return (
     <Card className={classes.container}>
-      <Header items={items}/>
-      <Expense items={items}/>
+      <Header items={items} />
+      <Expense items={items} />
       <Section>History</Section>
-      {items.length === 0 && <p className={classes["no-history"]}>No transaction found. Try adding one!</p>}
-      <ItemList items={items} />
+      {items.length === 0 && (
+        <p className={classes["no-history"]}>
+          No transaction found. Try adding one!
+        </p>
+      )}
+      <ItemList onDeleteItem={deleteItemHandler} items={items} />
       <Section>Add new transaction</Section>
       <ItemForm onAddItem={onAddItemHandler} />
     </Card>

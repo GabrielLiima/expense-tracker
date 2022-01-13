@@ -1,11 +1,12 @@
 import classes from "./ItemList.module.css";
 import Item from "./Item";
+import ItemForm from "./ItemForm";
 
 const ItemList = (props) => {
   return (
     <ul>
       {props.items.map((item) => (
-        <Item key={item.id} title={item.title} income={item.income} amount={item.amount} />
+        <Item onDeleteItem={props.onDeleteItem} key={item.id} id={item.id} title={item.title} income={item.income} amount={item.amount} />
       ))}
     </ul>
   );
