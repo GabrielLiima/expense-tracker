@@ -4,6 +4,7 @@ import Section from "./components/UI/Section";
 import Card from "./components/UI/Card";
 import Expense from "./components/expenses/Expense";
 import ItemList from "./components/items/ItemList";
+import ItemForm from "./components/items/ItemForm";
 
 function App() {
   const items = [
@@ -31,6 +32,7 @@ function App() {
       <Section>History</Section>
       <ItemList items={items} />
       <Section>Add new transaction</Section>
+      <ItemForm />
     </Card>
   );
 }

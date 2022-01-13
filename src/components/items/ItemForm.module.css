@@ -1,0 +1,40 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  border-radius: 0.4rem;
+  border: 1px solid rgba(197, 157, 250, 0.5);
+  padding: 0.3rem;
+  margin: 0.7rem 0;
+}
+
+.radio-buttons label {
+  margin-left: 1rem;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+form input:focus {
+  border-color: rgb(174, 120, 245);
+  outline: none;
+}
+
+form button {
+  background-color: rgb(143, 98, 202);
+  border-radius: 0.4rem;
+  border: 1px solid rgb(143, 98, 202);
+  margin-top: 0.7rem;
+  font: inherit;
+  padding: 0.3rem;
+  color: rgb(255, 255, 255);
+}
+
+.wrapper {
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
