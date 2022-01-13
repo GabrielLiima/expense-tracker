@@ -6,7 +6,6 @@ const ItemForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [isIncome, setIsIncome] = useState("");
-  const [formIsValid, setFormIsValid] = useState(false);
 
   const titleHandler = (event) => {
     setEnteredTitle(event.target.value);
@@ -33,7 +32,7 @@ const ItemForm = (props) => {
 
       setEnteredTitle("");
       setEnteredAmount("");
-      setIsIncome();
+      setIsIncome("");
 
       props.onAddItem(items);
     }
