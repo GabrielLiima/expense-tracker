@@ -32,6 +32,12 @@ form button {
   font: inherit;
   padding: 0.3rem;
   color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+form button:hover,
+form button:active {
+  background-color: rgb(124, 66, 199);
 }
 
 .wrapper {

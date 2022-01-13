@@ -11,3 +11,8 @@ html {
   margin: 2rem auto;
   padding: 1.5rem;
 }
+
+.no-history {
+  font-size: 0.9rem;
+
+}
