@@ -1,6 +1,5 @@
 import classes from "./ItemList.module.css";
 import Item from "./Item";
-import ItemForm from "./ItemForm";
 
 const ItemList = (props) => {
   return (
