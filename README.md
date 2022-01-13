@@ -2,6 +2,14 @@
 
 This project is a simple expense tracker made with React, currently hosted at https://gabrielliima.github.io/expense-tracker/.
 
+![app_image](https://user-images.githubusercontent.com/97259032/149417235-3b8f3f4b-a165-4dd9-bb8b-fb18d21d285f.png)
+
+## Usage
+
+    npm start
+
+Runs the app on development mode. Open http://localhost:3000 to view it in the browser.
+
 ## License
 This project is Open Source and licensed under the MIT License
 
@@ -24,3 +32,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
