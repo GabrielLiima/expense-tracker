@@ -3,21 +3,40 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 1rem;
+  padding: 1.1rem;
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
-}
-
-.expense {
-  border-right: 6px solid rgb(255, 91, 91);
 }
 
 .income {
   border-right: 6px solid rgb(90, 219, 90);
 }
 
+.income:hover .delete {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expense {
+  border-right: 6px solid rgb(255, 91, 91);
+}
+
+.expense:hover .delete {
+  display: inline-flex;
+}
+
 .title {
   flex: 1;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  white-space: nowrap;
+}
+
+.title::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .delete {
@@ -26,19 +45,11 @@
   background-color: rgb(255, 91, 91);
   font: inherit;
   padding: 0;
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.1rem;
+  height: 1.1rem;
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
-}
-
-.expense:hover .delete {
-  display: inline;
-}
-
-.income:hover .delete {
-  display: block;
 }
 
 .delete:hover {
