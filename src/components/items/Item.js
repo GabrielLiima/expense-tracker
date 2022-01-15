@@ -9,7 +9,7 @@ const Item = (props) => {
   return (
     <li>
       <Card className={`${props.income ? classes.income : classes.expense}`}>
-        <input type="button" className={classes.delete} onClick={deleteHandler} value="x"></input>
+        <button className={classes.delete} onClick={deleteHandler}>x</button>
         <div className={classes.title}>{props.title}</div>
         <div className={classes.amount}>
           {`${props.income ? "+" : "-"}${props.amount
