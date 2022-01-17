@@ -7,25 +7,15 @@ const Item = (props) => {
   const [deleteMode, setDeleteMode] = useState(false);
 
   const deleteHandler = () => {
-    if (deleteMode) {
-      props.onDeleteItem(props.id);
-    }
+    props.onDeleteItem(props.id);
   };
 
-  const enterDeleteMode = () => {
-    setTimeout(function () {
-      setDeleteMode(true);
-    }, 0);
-  };
-
-  const leaveDeleteMode = () => {
-    setTimeout(function () {
-      setDeleteMode(false);
-    }, 0);
+  const deleteModeHandler = () => {
+    setDeleteMode(!deleteMode);
   };
 
   return (
-    <li onMouseEnter={enterDeleteMode} onMouseLeave={leaveDeleteMode}>
+    <li onClick={deleteModeHandler}>
       <Card className={`${props.income ? classes.income : classes.expense}`}>
         {deleteMode && (
           <button className={classes.delete} onClick={deleteHandler}>
