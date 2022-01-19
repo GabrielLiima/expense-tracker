@@ -4,13 +4,16 @@ This project is a simple expense tracker made with React, currently hosted at ht
 
 ![app_image](https://user-images.githubusercontent.com/97259032/149417235-3b8f3f4b-a165-4dd9-bb8b-fb18d21d285f.png)
 
-## Usage
+## How to use
 
-    npm start
+This is a basic react app that tracks expenses. All you have to do is <b>use the form</b> to insert an
+expense/income and it'll show up on the history.
 
-Runs the app on development mode. Open http://localhost:3000 to view it in the browser.
+You can also <b>delete a transaction by clicking on it</b>, and then on the red button that appears.
 
+This project is still under development, and will be improved overtime. Contributions are always appreciated!
 ## License
+
 This project is Open Source and licensed under the MIT License
 
 Copyright (c) 2022 GabrielLiima
@@ -32,4 +35,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
