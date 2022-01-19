@@ -1,7 +1,10 @@
-import classes from "./ItemForm.module.css";
 import { useState } from "react";
+
+import classes from "./ItemForm.module.css";
+
 import Card from "../UI/Card";
 
+// A form for entering the transactions
 const ItemForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");

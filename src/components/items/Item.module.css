@@ -1,3 +1,7 @@
+li {
+  animation: appear 0.3s ease-in forwards;
+}
+
 .income,
 .expense {
   display: flex;
@@ -46,10 +50,6 @@
 
 .delete:hover {
   background-color: rgb(255, 62, 62);
-}
-
-li {
-  animation: appear 0.3s ease-in forwards;
 }
 
 @keyframes appear {

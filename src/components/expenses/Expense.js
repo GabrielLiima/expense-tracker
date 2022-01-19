@@ -1,6 +1,8 @@
 import classes from "./Expense.module.css";
+
 import Card from "../UI/Card";
 
+// Component that show the total income and expense
 const Expense = (props) => {
   let expenseAmount = 0;
   let incomeAmount = 0;
@@ -13,6 +15,9 @@ const Expense = (props) => {
     }
   });
 
+  // RegEx used for thousand separators
+  const search_value = /\B(?=(\d{3})+(?!\d))/g;
+
   return (
     <Card className={classes.wrapper}>
       <div className={classes.income}>
@@ -20,7 +25,7 @@ const Expense = (props) => {
         <p>{`$${incomeAmount
           .toFixed(2)
           .toString()
-          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`}</p>
+          .replace(search_value, ",")}`}</p>
       </div>
       <div className={classes.separator}></div>
       <div className={classes.expense}>
@@ -28,7 +33,7 @@ const Expense = (props) => {
         <p>{`$${expenseAmount
           .toFixed(2)
           .toString()
-          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`}</p>
+          .replace(search_value, ",")}`}</p>
       </div>
     </Card>
   );

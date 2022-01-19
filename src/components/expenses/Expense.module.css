@@ -6,11 +6,6 @@
   margin: 1.5rem auto 0 auto;
 }
 
-.separator {
-  border-left: 2px solid rgba(172, 172, 172, 0.25);
-  margin: 1rem 0 1rem 0;
-}
-
 .income,
 .expense {
   display: flex;
@@ -19,8 +14,7 @@
   padding: 1rem 0;
 }
 
-.income h2,
-.expense h2 {
+h2 {
   align-self: center;
   padding-bottom: 0.1rem;
 }
@@ -38,4 +32,9 @@
 .expense p {
   color: rgb(255, 91, 91);
   margin-left: 0.1rem;
+}
+
+.separator {
+  border-left: 2px solid rgba(172, 172, 172, 0.25);
+  margin: 1rem 0 1rem 0;
 }

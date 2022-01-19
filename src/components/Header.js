@@ -1,5 +1,6 @@
 import classes from "./Header.module.css";
 
+// A component that renders the main title and total balance
 const Header = (props) => {
   let balance = 0;
 
@@ -11,6 +12,9 @@ const Header = (props) => {
     }
   });
 
+  // RegEx used for thousand separators
+  const search_value = /\B(?=(\d{3})+(?!\d))/g;
+
   return (
     <div className={classes.wrapper}>
       <h1>Expense Tracker</h1>
@@ -19,7 +23,7 @@ const Header = (props) => {
         <p>{`${balance < 0 ? "-" : ""}$${Math.abs(balance)
           .toFixed(2)
           .toString()
-          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`}</p>
+          .replace(search_value, ",")}`}</p>
       </div>
     </div>
   );
