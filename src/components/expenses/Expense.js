@@ -2,7 +2,7 @@ import classes from "./Expense.module.css";
 
 import Card from "../UI/Card";
 
-// Component that show the total income and expense
+// Component that shows the total income and expense
 const Expense = (props) => {
   let expenseAmount = 0;
   let incomeAmount = 0;
